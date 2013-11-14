@@ -11,7 +11,7 @@ def getFile():
     home = expanduser("~")
         
     fileName = raw_input("File name: ")
-    path = home + '//Desktop//Rosalind//' + fileName 
+    path = home + '//Downloads//' + fileName 
     
     fileToOpen = open(path , 'r')
     return fileToOpen

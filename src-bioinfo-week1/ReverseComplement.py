@@ -1,8 +1,19 @@
 '''
-Created on Sep 28, 2013
+Created on Nov 12, 2013
 
 @author: Mike
 '''
+def getFile():
+    from os.path import expanduser
+    home = expanduser("~")
+        
+    fileName = raw_input("File name: ")
+    path = home + '//Downloads//' + fileName 
+    #print path
+    fileToOpen = open(path , 'r')
+    return fileToOpen
+
+
 
 def revComp(sequence):
     revCompS = ''
@@ -21,9 +32,8 @@ def revComp(sequence):
     return revCompS
         
 
-
 if __name__ == '__main__':
-    DNA = raw_input("Enter DNA sequence: ")
-    #DNA = 'AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC'
-    revCompSeq = revComp(DNA)
+    f = getFile()
+    line = f.readline()
+    revCompSeq = revComp(line)
     print revCompSeq

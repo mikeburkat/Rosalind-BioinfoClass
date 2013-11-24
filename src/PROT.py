@@ -19,7 +19,7 @@ def DNAtoRNA(DNA):
     
     return RNA
 
-def DNAtoPROT(s):
+def RNAtoPROT(s):
     prot = ''
     j = 0
     k = 3
@@ -67,6 +67,6 @@ if __name__ == '__main__':
     
     RNAseq = DNAtoRNA(DNAseq)
     
-    proteinSeq = DNAtoPROT(RNAseq)
+    proteinSeq = RNAtoPROT(RNAseq)
     
     print proteinSeq

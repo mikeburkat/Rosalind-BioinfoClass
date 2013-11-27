@@ -55,8 +55,6 @@ class ProfileMostProbableKmer:
             if contender > probMostProb:
                 mostProb = k
                 probMostProb = contender
-                
-        
         return mostProb
 
 

@@ -34,8 +34,8 @@ def getFile():
     from os.path import expanduser
     home = expanduser("~")
     #fileName = raw_input("File name: ")
-    #fileName = "spectral_convolution_data.txt"
-    fileName = "dataset_26_4.txt"
+    fileName = "spectral_convolution_data.txt"
+    #fileName = "dataset_26_4.txt"
     #fileName = ""
     path = home + '/Downloads/' + fileName 
     # print path
@@ -45,7 +45,7 @@ def getFile():
 if __name__ == '__main__':
     global allFragments 
     f = getFile()
-    #f.readline()
+    f.readline()
     listW = f.readline()
     #f.readline()
     #out = f.readline()
